@@ -1,8 +1,8 @@
-Amazon Product Web Scraper
+## Amazon Product Web Scraper
 
 A Python-based web scraping tool built using Beautiful Soup and Requests to extract Amazon product information such as title and price. This project demonstrates real-world web scraping techniques, HTTP request handling, and HTML parsing for data extraction.
 
-Project Overview
+## Project Overview
 
 Tracking product prices and collecting e-commerce data is a common real-world use case for web scraping. This repository provides a simple yet practical scraper that:
 
@@ -16,7 +16,7 @@ Handles errors gracefully during extraction
 
 The project is intended for educational purposes, showcasing how automated data extraction works on dynamic websites like Amazon.
 
-Features
+## Features
 
 Product Title Extraction – Scrapes the product name using HTML element inspection
 
@@ -28,44 +28,46 @@ Lightweight & Simple – Minimal dependencies and easy to extend
 
 Beginner-Friendly – Clear logic suitable for learning and interviews
 
-Usage
+## Usaging
 Clone the repository
-git clone https://github.com/your-username/amazon-web-scraper.git
-cd amazon-web-scraper
+```bash
+git clone https://github.com/Mathewku/amazon-products-scraper.git
+cd amazon-products-scraper
 
+```
 Create a Python virtual environment
+```bash
 python -m venv venv
+```
 
 Activate the virtual environment
-source venv/bin/activate      # Linux / macOS
-venv\Scripts\activate         # Windows
+```bash
+
+venv\Scripts\activate         
+```
 
 Install dependencies
+```bash
 pip install requests beautifulsoup4 lxml
+```
 
 Run the scraper
+```bash
 python scraper.py
+```
 
 
 Enter an Amazon product URL when prompted to receive extracted details.
 
 Sample Output
+```bash
 {
   'title': 'Apple AirPods Pro (2nd Generation)',
   'price': '$199.99'
 }
+```
 
-Notes
-
-Amazon frequently updates its website structure; selectors may require updates
-
-Excessive scraping may trigger CAPTCHAs or temporary IP blocking
-
-Always respect website terms of service
-
-Intended strictly for learning and demonstration purposes
-
-Future Enhancements
+## Future Enhancements
 
 Extract ratings and availability status
 
